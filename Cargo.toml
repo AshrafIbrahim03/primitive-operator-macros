@@ -1,0 +1,18 @@
+[package]
+name = "primitive_operators_macros"
+version = "0.1.0"
+edition = "2024"
+author = "Ashraf Ibrahim"
+license-file = "LICENSE.md"
+keywords = ["arbitrary", "fuzzing", "operators", "macros"]
+description = "Operator macros for constraining arbitrary types."
+repository = "https://github.com/AshrafIbrahim03/primitive-operators-macros"
+
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+quote = "1"
+syn = { version = "3", features = ["parsing"] }
